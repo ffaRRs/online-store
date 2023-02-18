@@ -1,0 +1,80 @@
+.myswiper {
+    height: 320px;
+}
+
+.swiperNavNext,
+.swiperNavPrev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-image: url('../../../public/img/slider/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-position: 55% 50%;
+    background-color: #2A2A2A;
+    cursor: pointer;
+}
+
+.swiperNavNext {
+    right: 36px;
+}
+
+.swiperNavPrev {
+    left: 36px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* <Slide> ======================================================== */
+
+.swiperslide {
+    position: relative;
+}
+
+.swiperslide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-slide {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px;
+}
+
+.info-slide__content {
+    text-align: left;
+
+}
+
+.info-slide__category {
+    font-size: 14px;
+}
+
+.info-slide__name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.info-slide__more {
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 30px 7px 30px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+/* <Slide> ======================================================== */

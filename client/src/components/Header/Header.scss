@@ -1,0 +1,84 @@
+.header {
+    background: #2A2A2A;
+    padding: 22px 0;
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo{
+        margin-right: 10px;
+    }
+    &__input{
+        margin-left: 10px;
+        width: 25.6rem;
+    }
+    
+    &__phone{
+        margin-left: 10px;
+    }
+    &__info{
+        margin-left: 10px;
+    }
+}
+.input-header{
+    display: flex;
+    align-items: center;
+    position: relative;
+    &__img{
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        transform: translate(0, -50%);
+    }
+    &__search{
+        font-size: 12px;
+        padding: 12px 48px 12px 12px;
+        width: 100%;
+        border-radius: 9px;
+        border: none;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+.phone-header{
+    display: flex;
+    align-items: center;
+    &__img{
+        margin-right: 9px;
+    }
+    &__number{
+        font-weight: bold;
+        font-size: 20px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+}
+.info-header{
+    display: flex;
+    align-items: center;
+    &__profile{}
+    &__cart{
+        margin-left: 12px;
+    }
+}
+
+.cart-info{
+    display: flex;
+    position: relative;
+    &__img{}
+    & span{
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        height: 16px;
+        padding: 0 4.5px;
+        background: #F9A43F;
+        color: #ffffff;
+        font-size: 14px;
+        border-radius: 10px;
+        text-align: center;
+    }
+}

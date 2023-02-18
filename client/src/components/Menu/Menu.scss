@@ -1,0 +1,126 @@
+.menu {
+    padding: 15px 0;
+    background: #F7F3F0;
+    font-weight: bold;
+    font-size: 16px;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__catalog {
+        margin: 0px 15px 0px 0px;
+    }
+
+    &__items {
+        flex: 0 1 72%;
+    }
+
+    &__social {
+        margin: 0px 0px 0px 15px;
+    }
+}
+
+.catalog-menu {
+    position: relative;
+    cursor: pointer;
+    // display: flex;
+    align-items: center;
+
+    &__burger {
+        position: absolute;
+        margin: 0px 14px 0px 0px;
+        // position: relative;
+        z-index: 100;
+        width: 16px;
+        height: 16px;
+
+        & span {
+            transition: all 0.2s ease 0s;
+
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 16px;
+            height: 2px;
+            background-color: #2A2A2A;
+            margin: 0px 0px 4px 0px;
+
+            &:first-child {
+                top: 1px;
+            }
+
+            &:nth-child(2) {
+                top: 7px;
+
+            }
+
+            &:last-child {
+                top: 14px;
+            }
+
+        }
+    }
+
+    &.active {
+        .catalog-menu__burger span {
+            // margin: 0;
+
+            &:first-child {
+                top: 50%;
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                display: none;
+            }
+
+            &:last-child {
+                top: 50%;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    &__label {
+        margin-left: 30px;
+    }
+}
+
+.items-menu {
+    list-style: none;
+    display: flex;
+    // margin-left: 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__item {
+        margin: 0px 15px 0px 0px;
+        cursor: pointer;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+
+.social-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+    &__inst {
+        margin: 0px 10px 0px 0px;
+    }
+
+    &__vk {
+        margin: 0px 10px 0px 0px;
+    }
+
+    &__fb {}
+}
