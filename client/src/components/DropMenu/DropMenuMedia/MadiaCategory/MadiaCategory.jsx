@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import magicTheGatheting from "../../../../data/subCategory/magicTheGatheting";
+import magicTheGatheting from "../../../../data/dropMenu/subCategory/magicTheGatheting";
 
 
 const MadiaCategory = ({category}) => {

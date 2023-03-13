@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
-import warhammerItems from "../../data/subCategory/warhammer4000";
+import warhammerItems from "../../data/dropMenu/subCategory/warhammer4000";
 import SubCategory from "../UI/SubCategory";
-import categories from "../../data/categories";
+import categories from "../../data/dropMenu/categories";
 import Category from "../UI/Category";
 import "./DropMenu.scss";
 import {observer} from 'mobx-react-lite'
 import { Context } from "../..";
-import allSubCategory from "../../data/allSubCategory";
+import allSubCategory from "../../data/dropMenu/allSubCategory";
 
 const DropMenu = () => {
     let [subCategory, setSubCategory] = useState(allSubCategory[0].file);

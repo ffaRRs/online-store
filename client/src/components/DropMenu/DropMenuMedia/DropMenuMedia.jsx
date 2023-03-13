@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import "./DropMenuMedia.scss";
-import categories from "../../../data/categories";
+import categories from "../../../data/dropMenu/categories";
 import { Context } from "../../..";
 import { observer } from "mobx-react-lite";
 import MadiaCategory from "./MadiaCategory/MadiaCategory";
