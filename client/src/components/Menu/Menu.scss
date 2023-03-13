@@ -1,8 +1,21 @@
+.pos{
+    position: relative;
+}
 .menu {
+    // position: relative;
     padding: 15px 0;
     background: #F7F3F0;
     font-weight: bold;
     font-size: 16px;
+
+    @media(max-width: 900px) {
+        // padding: 10px 0;
+
+    }
+
+    @media(max-width: 800px) {
+        display: none;
+    }
 
     &__row {
         display: flex;
@@ -26,12 +39,14 @@
 .catalog-menu {
     position: relative;
     cursor: pointer;
-    // display: flex;
+    display: flex;
     align-items: center;
 
     &__burger {
-        position: absolute;
-        margin: 0px 14px 0px 0px;
+        margin-right: 20px;
+
+        position: relative;
+        // margin: 0px 14px 0px 0px;
         // position: relative;
         z-index: 100;
         width: 16px;
@@ -48,6 +63,12 @@
             height: 2px;
             background-color: #2A2A2A;
             margin: 0px 0px 4px 0px;
+
+            @media(max-width: 800px) {
+                // display: none;
+                background-color: #ffffff;
+
+            }
 
             &:first-child {
                 top: 1px;
@@ -86,7 +107,12 @@
     }
 
     &__label {
-        margin-left: 30px;
+
+        @media(max-width: 900px) {
+            font-size: 14px;
+            margin-left: 15px;
+
+        }
     }
 }
 
@@ -104,6 +130,15 @@
 
         &:last-child {
             margin: 0;
+        }
+
+        &:hover {
+            color: #F9A43F;
+            border-bottom: 1px solid #F9A43F;
+        }
+
+        @media(max-width: 900px) {
+            font-size: 14px;
         }
     }
 }

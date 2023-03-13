@@ -19,7 +19,8 @@ export default class dropMenuStore{
     }
 
     chageOpenDropMenu(){
-        this.openDropMenu = !this.openDropMenu;
+        // this.openDropMenu = !this.openDropMenu;
+        this.openDropMenu = true;
     }
 
     setCurrentElement(nameElement){

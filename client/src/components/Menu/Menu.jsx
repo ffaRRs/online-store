@@ -4,14 +4,16 @@ import { observer } from "mobx-react-lite";
 import DropMenu from "../DropMenu/DropMenu";
 import { useContext } from "react";
 import { Context } from "../..";
-import dropMenuStore from "../../store/dropMenuStore";
+import DropMenuMedia from "../DropMenu/DropMenuMedia/DropMenuMedia";
+// import dropMenuStore from "../../store/dropMenuStore";
 
 const Menu = () => {
-    let [openDropMenu, setOpenDropMenu] = useState(false);
+    // let [openDropMenu, setOpenDropMenu] = useState(false);
     const {dropMenuStore} = useContext(Context);
 
     return (
-        <>
+        <div className="pos">
+            <DropMenuMedia/>
             <DropMenu />
             <div className="menu">
                 <div className="container">
@@ -22,8 +24,9 @@ const Menu = () => {
                                     ? "menu__catalog catalog-menu"
                                     : "menu__catalog catalog-menu active"
                             }
-                            onClick={() => dropMenuStore.changeOpenDropMenu}
+                            // onClick={() => dropMenuStore.changeOpenDropMenu}
                         >
+
                             <div className="catalog-menu__burger">
                                 <span></span>
                                 <span></span>
@@ -60,7 +63,7 @@ const Menu = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

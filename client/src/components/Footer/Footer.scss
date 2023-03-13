@@ -1,0 +1,184 @@
+.footer {
+    padding: 50px 0px 0px 0px;
+    background: #2A2A2A;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+
+    &__row {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-column-gap: 50px;
+        margin: 0px 0px 80px 0px;
+
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+    }
+
+    &__line {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    &__info {}
+
+    &__main {}
+
+    &__menu {}
+
+    &__under {}
+}
+
+.main-footer {
+    &__img {
+        margin: 0px 0px 15px 0px;
+    }
+
+    &__adress {}
+}
+
+.menu-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+
+    //display: flex;
+    // align-items: center;
+    //justify-content: space-between;
+    &__column {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    &__catalog {}
+}
+
+.catalog-menu {
+    &__title {
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    &__items {
+        line-height: 20px;
+    }
+
+    &__item {}
+}
+
+.column-menu {
+    &__item {}
+}
+
+.info-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__button {
+        cursor: pointer;
+        font-size: 19px;
+        font-weight: bold;
+        padding: 15px 38px;
+        // background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+        background: transparent;
+        border: 1px solid #F9A43F;
+        border-radius: 9px;
+        color: #F9A43F;
+        margin: 0px 0px 25px 0px;
+        // border: 0;
+    }
+
+    &__contact {}
+
+    &__social {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0px 0px 15px 0px;
+
+    &__phone {
+        margin: 0px 0px 5px 0px;
+    }
+
+    &__gmail {}
+}
+
+.social-info {
+    &__inst {
+        margin: 0px 10px 0px 0px;
+
+    }
+
+    &__fb {}
+
+    &__vk {
+        margin: 0px 10px 0px 0px;
+    }
+}
+
+// =========================================================================
+
+.under-footer {
+    color: rgba(255, 255, 255, 0.44);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px 30px 0px;
+
+
+    &__politics {}
+
+    &__cards {}
+
+    &__scam {}
+}
+
+.politics-under {
+    &__confirm {}
+
+    &__text {
+        text-decoration: underline;
+        color: rgba(255, 255, 255, 0.44);
+
+    }
+}
+
+.cards-under {
+    display: flex;
+    align-items: center;
+
+    &__card {
+        margin: 0px 10px 0px 0px;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+
+.scam-under {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__text {}
+
+    &__agree {
+        text-decoration: underline;
+        color: rgba(255, 255, 255, 0.44);
+
+
+    }
+}

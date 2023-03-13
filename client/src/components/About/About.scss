@@ -1,0 +1,39 @@
+.about{
+    margin: 0px 0px 85px 0px;
+    // height: 540px;
+
+    &__row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+    }
+
+    &__info{
+
+    }
+    &__img{
+        border-radius: 9px;
+        overflow: hidden;
+        height: 434px;
+        & img{
+            object-fit: cover;
+        }
+    }
+}
+
+.info-about{
+    &__title{
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0px 0px 20px 0px;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0px 0px 17px 0px;
+        &:last-child{
+            margin: 0;
+        }
+    }
+}

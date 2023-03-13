@@ -1,0 +1,40 @@
+.catalog-category {
+    cursor: pointer;
+    position: relative;
+    border-radius: 9px;
+    overflow: hidden;
+    height: 175px;
+
+    
+    &:hover{
+        .catalog-category__title{
+            color: #F9A43F;
+
+        }
+    }
+
+    &__title {
+        display: inline-block;
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        background: #2A2A2A;
+        width: 100%;
+        padding: 12px 19px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        // transition: 0s all 0.5s ease;
+    }
+
+
+    & img {
+
+        object-fit: cover;
+
+    }
+
+    &__img {
+        width: 240px;
+    }
+}

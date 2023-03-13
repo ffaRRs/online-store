@@ -5,35 +5,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import { Navigation, EffectFade } from "swiper";
+import sliderHeader from "../../data/slider/sliderHeader";
 
 const Slider = () => {
-    const slidesInfo = [
-        {
-            title: "Самая популярная карточная игра",
-            name: "Magic: the Gathering",
-            img: "./img/slider/1.jpg",
-        },
-        {
-            title: "Самая популярная карточная",
-            name: "Wharhammer",
-            img: "./img/slider/1.jpg",
-        },
-        {
-            title: "Самая популярная",
-            name: "Мероприятия",
-            img: "./img/slider/1.jpg",
-        },
-        {
-            title: "Самая игра",
-            name: "Контакты",
-            img: "./img/slider/1.jpg",
-        },
-        {
-            title: "Самая карточная игра",
-            name: "+7 (495) 911-10-11",
-            img: "./img/slider/1.jpg",
-        },
-    ];
 
     const swiperNavPrevRef = useRef(null);
     const swiperNavNextRef = useRef(null);
@@ -59,7 +33,7 @@ const Slider = () => {
                 }}
                 className="myswiper"
             >
-                {slidesInfo.map((slide) => {
+                {sliderHeader.map((slide) => {
                     return (
                         <SwiperSlide className="swiperslide">
                             <img src={slide.img} alt="" />
